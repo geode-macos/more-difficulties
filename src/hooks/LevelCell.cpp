@@ -24,7 +24,7 @@ class $modify(LevelCell) {
 			int difficulty = p0->getAverageDifficulty();
 			bool isDemon = p0->m_demon.value() == 1;
 
-        	MoreDFSprite* mdSpr = MoreDFSprite::createWithStarCount({(starCount != 0) ? starCount : suggestedStarCount}, false);
+        	MoreDFSprite* mdSpr = MoreDFSprite::createWithStarCount((starCount != 0) ? starCount : suggestedStarCount, false);
 			CCSprite* mdGlow = CCSprite::createWithSpriteFrameName("MD_LegendaryGlow.png"_spr);
 			// mdGlow->setBlendFunc(ccBlendFunc::)
 
